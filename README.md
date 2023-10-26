@@ -1,2 +1,2 @@
-# login-screen-study-
+# login-screen-study
 Login screen study 
