@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+    <script src="https://kit.fontawesome.com/ac422d41a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/sub-css/form-container.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/sub-css/colors.css">
+    <link rel="stylesheet" href="/sub-css/reset.css">
+    <link rel="stylesheet" href="/sub-css/social.css">
+    <link rel="stylesheet" href="/sub-css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/sub-css/overlay.css">
+
+
+    <!-- EXPLICAÇÃO: Como o HTML lê todo o código de cima para baixo e executa tudo em ordem, o script ficaria confuso -->
+    <!-- Por isso se usa o 'defer', defer pede para o HTML ler tudo e somente depois disso ler o script em questão -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <main>
+        <!-- ADD 'MOVE' IN LOGIN-CONTAINER CLASS -->
+        <div class="login-container" id="login-container">
+            <div class="form-container">
+                <form class="form form-login">
+                    <h2 class="form-title">Entrar com</h2>
+                    <div class="form-social">
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="form-text">ou utilize sua conta</p>
+                    <div class="form-input-container">
+                        <input type="email" class="form-input" placeholder="Email">
+                        <input type="password" class="form-input" placeholder="Senha" id="">
+                    </div>
+                    <a href="" class="form-link">esqueceu a senha?</a>
+                    <button class="form-button">Logar</button>
+                    <p class="mobile-text">Não tem conta? 
+                        <a id="open-register-mobile" href="#">Registre-se</a>
+                    </p>
+                </form>
+                <form class="form form-register">
+                    <h2 class="form-title">Criar Conta</h2>
+                    <div class="form-social">
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="form-text">ou cadastre seu email</p>
+                    <div class="form-input-container">
+                        <input type="name" class="form-input" placeholder="Nome" id="">
+                        <input type="email" class="form-input" placeholder="Email">
+                        <input type="password" class="form-input" placeholder="Senha" id="">
+                    </div>
+                    <p></p>
+                    <p></p>
+                    <button class="form-button">Cadastrar</button>
+                    <p class="mobile-text">Já tem conta? 
+                         <a id="open-login-mobile" href="#">Login</a>
+                    </p>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <h2 class="form-title">Já tem conta?</h2>
+                    <p class="form-text">Para entrar na nossa plataforma faça login com suas informações</p>
+                    <button type="button" class="form-button form-button-light" id="open-login">Entrar</button>
+                </div>
+                <div class="overlay">
+                    <h2 class="form-title">Olá Aluno</h2>
+                    <p class="form-text">Cadastre-se e comece a usar nossa plataforma</p>
+                    <button type="button" class="form-button form-button-light" id="open-register">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

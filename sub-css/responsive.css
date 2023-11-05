@@ -1,0 +1,55 @@
+@media (max-width:768px) {
+    .overlay-container{
+        display: none;
+    }
+
+    .login-container{
+        width: 100vw;
+        height: 100vh;
+        box-shadow: none;
+        border-radius: 0rem;
+    }
+
+    
+    .form{
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+
+
+    /* este está empurrando o form para a esquerda impedindo a centralização */
+    .form-register{
+        position: absolute;
+        background-color: var(--primary-color);
+        color: #fff;
+        transform: translateX(100%);
+    }
+
+    .login-container.move .form-register{
+        transform: translateX(0%);
+    }
+
+    .form-button{
+        background-color: var(--primary-color);
+        color: #fff;
+        border: #fff;
+    }
+}
+
+
+.mobile-text{
+    display: none;
+}
+
+
+@media (max-width: 768px){
+    .mobile-text{
+        display: inline;
+    }
+    
+    .mobile-text a{
+        font-weight: 900;
+        color: inherit;
+    }
+}

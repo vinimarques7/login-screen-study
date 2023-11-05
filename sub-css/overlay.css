@@ -1,0 +1,49 @@
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: var(--text-color-light);
+    text-align: center;
+    transform: translateX(100%);
+    z-index: 10;
+    transition: 1s;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    background-color: var(--primary-color);
+    transition: .5s;
+}
+
+.form-button-light{
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.form-button-light:hover{
+    color: var(--primary-color);
+    background-color: var(--text-color-light);
+}
+
+.login-container.move .overlay-container{
+    transform: translateX(0%);
+}
+
+/* nth-child(2) adiciona este comando somente ao filho designado */
+/* neste caso é o segundo filho */
+
+.login-container.move .overlay:nth-child(2){
+    opacity: 0;
+}
+
+
